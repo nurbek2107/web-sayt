@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avion</title>
+  <link rel="icon" type="image/x-icon" href="static/img/png/letter-a.png">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav_top d-flex justify-content-between">
+          <div class="nav_top_left">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="static/img/svg/Search.svg" alt="logo">
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">Search</label>
+                        <input type="search" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-12">
+                        <button type="Search" class="btn btn-primary">Search</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav_top_center">
+            <a href="#">Avion</a>
+          </div>
+          <div class="nav_top_right d-flex gap-3">
+            <div class="top_right_left">
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Show a second modal and hide this one with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open
+                        second modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <img
+                  src="static/img/svg/Shopping--cart.svg" alt="shopping_logo"></button>
+            </div>
+            <div class="top_right_right">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="static/img/svg/User--avatar.svg" alt="user">
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign up</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <div class="col-sm-10 offset-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <hr style="color: rgba(26, 25, 25, 0.3);">
+        <div class="nav_bottom d-flex justify-content-center ">
+          <a href="#">Plant pots</a>
+          <a href="#">Ceramics</a>
+          <a href="#">Tables</a>
+          <a href="#">Chairs</a>
+          <a href="#">Crockery</a>
+          <a href="#">Tableware</a>
+          <a href="#">Cutlery</a>
+        </div>
+        <nav class="navbar bg-body fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Avion</a>
+            <div class="">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="static/img/svg/Search.svg" alt="logo">
+              </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Avion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <ul class="navbar-nav d-grid col-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ceramics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chairs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Crockery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tableware</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cutlery</a>
+                  </li>
+                  <div class="d-flex">
+                    <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <img
+                        src="static/img/svg/Shopping--cart.svg" alt="shopping_logo"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      <img src="static/img/svg/User--avatar.svg" alt="user">
+                    </button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+    <div class="nav_img">
+      <picture>
+        <source type="static/img/png" srcset="static/img/png/img.webp">
+        <img class="img-fluid" src="static/img/png/img.png" alt="img">
+      </picture>
+      <div class="container position-relative">
+        <div class="nav_card d-flex flex-column gap-4">
+          <div class="card_text ">
+            <p class="p1">Luxury homeware for people <br> who love timeless design quality</p>
+            <p class="p2">Shop the new Spring 2022 collection today</p>
+          </div>
+          <div class="card_button">
+            <a href="#">View collection</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+    <div class="cards">
+      <div class="cards_text">
+        <p>What makes our brand different</p>
+      </div>
+      <div class="row row-cols-1  row-cols-xl-4 row-cols-lg-2 mt-5 g-5">
+        <div class="col">
+          <div class="card">
+            <img width="24px" src="static/img/svg/Delivery.svg"  alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Next day as standard</h5>
+              <p class="card-text">Order before 3pm and get  your order the next day as standard</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            
+            <img width="24px" src="static/img/svg/Checkmark--outline.svg"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Made by true artisans</h5>
+              <p class="card-text">Handmade crafted goods  made with real passion and craftmanship</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img width="24px" src="static/img/svg/Purchase.svg"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Unbeatable prices</h5>
+              <p class="card-text">For our materials and quality you won’t find better prices anywhere</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img width="24px" src="static/img/svg/Sprout.svg"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Recycled packaging</h5>
+              <p class="card-text">We use 100% recycled to ensure our footprint is more manageable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cards1">
+    <div class="cards1 row row-cols-2 row-cols-xl-4 row-cols-lg-2">
+      <div class="col">
+        <div class="card">
+          <picture>
+            <source type="static/img/png" srcset="static/img/png/Photo.webp">
+            <img  src="static/img/png/Photo.png"  alt="img">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">The Dandy chair</h5>
+            <p class="card-text">£250</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <picture>
+            <source type="static/img/png" srcset="static/img/png/Photo.webp">
+            <img  src="static/img/png/Photo1.png"  alt="img">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Rustic Vase Set</h5>
+            <p class="card-text">£155</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <picture>
+            <source type="static/img/png" srcset="static/img/png/Photo.webp">
+            <img  src="static/img/png/Photo2.png"  alt="img">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">The Silky Vase</h5>
+            <p class="card-text">£125</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <picture>
+            <source type="static/img/png" srcset="static/img/png/Photo.webp">
+            <img  src="static/img/png/Photo3.png"  alt="img">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">The Lucy Lamp</h5>
+            <p class="card-text">£399</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card_button text-center">
+      <a href="#">View collection</a>
+    </div>
+  </div>
+  <div class="cards2 ">
+    <div class="cards3  d-flex justify-content-between">
+     <div class="col_1">
+      <div class="nav_card1 d-flex flex-column gap-4 position-relative">
+        <div class="card_text ">
+          <p class="p1">It started with a small idea</p>
+          <p class="p2">A global brand with local beginnings, our story begain in a <br> small studio in South London in early 2014</p>
+        
+        <div class="card_button">
+          <a href="#">View collection</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col_2">
+    <picture>
+      <source  type="static/img/png" srcset="static/img/png/ImageBlock.webp">
+      <img  src="static/img/png/ImageBlock.png"  alt="img">
+    </picture>
+  </div>
+  </div>
+  </div>
+
+
+  </div>
+  <div class="card_4 ">
+    <picture>
+      <source  srcset="static/img/png/footer.webp" type="img/webp">
+      <img height="444px"  src="static/img/png/footer.jpg" type="img/jpg"  alt="img">
+    </picture>
+    <div class="block">
+    <div class="card_4 d-flex flex-column text-center">
+      <p class="p1">Join the club and get the benefits</p>
+      <p class="p2">Sign up for our newsletter and receive exclusive offers on <br> new ranges, sales, pop up stores and more</p>
+      <div class="text_1 d-flex  justify-content-center mt-">
+      <p><img src="static/img/svg/Vector.svg" alt="icon">Exclusive offers</p>
+      <p><img src="static/img/svg/Vector.svg" alt="icon">Exclusive offers</p>
+      <p><img src="static/img/svg/Vector.svg" alt="icon">Exclusive offers</p>
+    </div>
+    <div class="input-group mt-5">
+      <input type="text" class="form-control" placeholder="your@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+    </div>
+   
+  </div>
+  </div>
+  </main>
+
+<footer>
+  <div class="container">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex flex-column gap-2">
+          <p>Menu</p>
+          <a href="#">New arrivals</a>
+          <a href="#">Best sellers</a>
+          <a href="#">Recently viewed</a>
+          <a href="#">Popular this week</a>
+          <a href="#">All products</a>
+        </div>
+        <div class="col  d-flex flex-column gap-2">
+          <p>Categories</p>
+          <a href="#">Crockery</a>
+          <a href="#">Furniture</a>
+          <a href="#">Homeware</a>
+          <a href="#">Plant pots </a>
+          <a href="#">Chairs</a>
+          <a href="#">Crockery</a>
+        </div>
+        <div class="col  d-flex flex-column gap-2">
+            <p>company</p>
+            <a href="#">About us</a>
+            <a href="#">Vacancies</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy </a>
+            <a href="#">Returns policy</a>
+        </div>
+        <div class="col  d-flex flex-column">
+          <div class="input-group mt-5">
+            <input type="text" class="form-control" placeholder="your@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="color: rgba(78, 77, 147, 1);">
+  <div class="footer_bottom">
+    <div class="container ">
+      <div class="footer_card d-flex justify-content-between">
+        <div class="left">
+          <p>Copyright 2022 Avion LTD</p>
+        </div>
+        <div class="right d-flex gap-3">
+         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.65 0H1.35C0.6 0 0 0.6 0 1.275V16.65C0 17.325 0.6 17.925 1.35 17.925H16.65C17.4 17.925 18 17.325 18 16.65V1.275C18 0.6 17.4 0 16.65 0ZM5.325 15.3H2.7V6.75H5.325V15.3ZM4.05 5.55C3.225 5.55 2.475 4.875 2.475 3.975C2.475 3.075 3.15 2.4 4.05 2.4C4.875 2.4 5.625 3.075 5.625 3.975C5.625 4.875 4.875 5.55 4.05 5.55ZM15.375 15.225H12.75V11.025C12.75 10.05 12.75 8.7 11.325 8.7C9.9 8.7 9.75 9.825 9.75 10.875V15.15H7.125V6.75H9.6V7.875H9.675C10.05 7.2 10.95 6.45 12.225 6.45C14.925 6.45 15.45 8.25 15.45 10.575V15.225H15.375Z" fill="white"/>
+          </svg>
+          </a>
+         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.0025 0H0.9975C0.733553 0.00196251 0.480974 0.107686 0.29433 0.29433C0.107686 0.480974 0.00196251 0.733553 0 0.9975V17.0025C0.00196251 17.2664 0.107686 17.519 0.29433 17.7057C0.480974 17.8923 0.733553 17.998 0.9975 18H9.615V11.04H7.275V8.3175H9.615V6.315C9.615 3.99 11.0325 2.7225 13.1175 2.7225C13.815 2.7225 14.5125 2.7225 15.21 2.8275V5.25H13.7775C12.645 5.25 12.4275 5.79 12.4275 6.5775V8.31H15.1275L14.775 11.0325H12.4275V18H17.0025C17.2664 17.998 17.519 17.8923 17.7057 17.7057C17.8923 17.519 17.998 17.2664 18 17.0025V0.9975C17.998 0.733553 17.8923 0.480974 17.7057 0.29433C17.519 0.107686 17.2664 0.00196251 17.0025 0Z" fill="white"/>
+          </svg>
+          </a>
+         <a href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8042 5.2758C14.4007 5.2758 14.8842 4.79227 14.8842 4.1958C14.8842 3.59933 14.4007 3.1158 13.8042 3.1158C13.2077 3.1158 12.7242 3.59933 12.7242 4.1958C12.7242 4.79227 13.2077 5.2758 13.8042 5.2758Z" fill="white"/>
+          <path d="M9 4.37835C8.08592 4.37835 7.19237 4.64941 6.43235 5.15724C5.67232 5.66507 5.07995 6.38688 4.73015 7.23137C4.38035 8.07587 4.28883 9.00513 4.46715 9.90164C4.64548 10.7982 5.08565 11.6217 5.732 12.268C6.37835 12.9144 7.20185 13.3545 8.09836 13.5328C8.99487 13.7112 9.92413 13.6196 10.7686 13.2698C11.6131 12.92 12.3349 12.3277 12.8428 11.5677C13.3506 10.8076 13.6217 9.91408 13.6217 9C13.6217 7.77426 13.1347 6.59873 12.268 5.732C11.4013 4.86527 10.2257 4.37835 9 4.37835ZM9 12C8.40666 12 7.82664 11.8241 7.33329 11.4944C6.83994 11.1648 6.45542 10.6962 6.22836 10.1481C6.0013 9.59987 5.94189 8.99667 6.05764 8.41473C6.1734 7.83279 6.45912 7.29824 6.87868 6.87868C7.29824 6.45912 7.83279 6.1734 8.41473 6.05764C8.99667 5.94189 9.59987 6.0013 10.1481 6.22836C10.6962 6.45542 11.1648 6.83994 11.4944 7.33329C11.8241 7.82664 12 8.40666 12 9C12 9.79565 11.6839 10.5587 11.1213 11.1213C10.5587 11.6839 9.79565 12 9 12Z" fill="white"/>
+          <path d="M9 1.62165C11.4031 1.62165 11.6878 1.6308 12.6368 1.67415C13.2075 1.68094 13.7728 1.78577 14.308 1.98405C14.6961 2.13381 15.0486 2.36316 15.3428 2.65732C15.6369 2.95149 15.8663 3.30398 16.016 3.6921C16.2143 4.22731 16.3191 4.79261 16.3259 5.36333C16.3692 6.3123 16.3784 6.597 16.3784 9.00007C16.3784 11.4031 16.3693 11.6878 16.3259 12.6368C16.3191 13.2075 16.2143 13.7728 16.016 14.3081C15.8663 14.6962 15.6369 15.0487 15.3428 15.3428C15.0486 15.637 14.6961 15.8663 14.308 16.0161C13.7728 16.2144 13.2075 16.3192 12.6368 16.326C11.6879 16.3693 11.4033 16.3785 9 16.3785C6.5967 16.3785 6.31215 16.3694 5.36325 16.326C4.79253 16.3192 4.22723 16.2144 3.69202 16.0161C3.3039 15.8663 2.95142 15.637 2.65725 15.3428C2.36308 15.0487 2.13374 14.6962 1.98397 14.3081C1.78569 13.7728 1.68087 13.2075 1.67408 12.6368C1.6308 11.6878 1.62157 11.4031 1.62157 9.00007C1.62157 6.597 1.63072 6.3123 1.67408 5.36333C1.68087 4.79261 1.78569 4.22731 1.98397 3.6921C2.13373 3.30396 2.36307 2.95146 2.65724 2.65728C2.95141 2.3631 3.30389 2.13375 3.69202 1.98397C4.22723 1.78569 4.79253 1.68087 5.36325 1.67408C6.31222 1.6308 6.59693 1.62165 9 1.62165ZM9 0C6.55575 0 6.24922 0.0103499 5.2893 0.0541499C4.54279 0.0691372 3.80422 0.210592 3.105 0.4725C2.50705 0.703735 1.96401 1.05735 1.51068 1.51068C1.05735 1.96401 0.703735 2.50705 0.4725 3.105C0.210551 3.80434 0.0690949 4.54304 0.0541499 5.28968C0.0103499 6.24923 0 6.55575 0 9C0 11.4443 0.0103499 11.7508 0.0541499 12.7107C0.0691036 13.4573 0.210559 14.196 0.4725 14.8954C0.703735 15.4933 1.05735 16.0364 1.51068 16.4897C1.96401 16.943 2.50705 17.2966 3.105 17.5279C3.80434 17.7898 4.54304 17.9313 5.28968 17.9462C6.24923 17.9897 6.55575 18 9 18C11.4443 18 11.7508 17.9896 12.7107 17.9459C13.4573 17.9309 14.196 17.7894 14.8954 17.5275C15.4933 17.2963 16.0364 16.9426 16.4897 16.4893C16.943 16.036 17.2966 15.493 17.5279 14.895C17.7898 14.1957 17.9313 13.457 17.9462 12.7103C17.9897 11.7508 18 11.4443 18 9C18 6.55575 17.9896 6.24922 17.9459 5.2893C17.9309 4.54279 17.7894 3.80422 17.5275 3.105C17.2962 2.50712 16.9426 1.96415 16.4893 1.51089C16.0359 1.05763 15.4929 0.704069 14.895 0.472875C14.1957 0.210934 13.457 0.0694787 12.7103 0.054525C11.7508 0.01035 11.4443 0 9 0Z" fill="white"/>
+          </svg>
+          </a>
+         <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.9325 11.4101C19.0081 10.9439 19.0457 10.4723 19.045 10.0001C19.045 7.60117 18.0921 5.30054 16.3958 3.60427C14.6995 1.90801 12.3989 0.955053 10 0.955053C9.52774 0.95432 9.05619 0.991943 8.59001 1.06755C7.54457 0.441307 6.31987 0.182284 5.11039 0.331618C3.90091 0.480953 2.77599 1.03008 1.91427 1.89181C1.05254 2.75353 0.503414 3.87845 0.354079 5.08793C0.204745 6.29741 0.463767 7.52211 1.09001 8.56755C1.00564 9.04052 0.960486 9.51965 0.955014 10.0001C0.955014 12.3989 1.90797 14.6996 3.60423 16.3958C5.3005 18.0921 7.60113 19.0451 10 19.0451C10.4723 19.0458 10.9438 19.0082 11.41 18.9326C12.4555 19.5588 13.6802 19.8178 14.8896 19.6685C16.0991 19.5192 17.224 18.97 18.0858 18.1083C18.9475 17.2466 19.4966 16.1217 19.6459 14.9122C19.7953 13.7027 19.5363 12.478 18.91 11.4326L18.9325 11.4101ZM14.2975 14.1101C13.8742 14.6953 13.2908 15.1459 12.6175 15.4076C11.7868 15.7336 10.8997 15.8916 10.0075 15.8726C8.96904 15.916 7.93591 15.7022 7.00001 15.2501C6.45438 14.9567 5.98647 14.5377 5.63501 14.0276C5.31308 13.5918 5.13011 13.069 5.11001 12.5276C5.10922 12.3871 5.13746 12.2479 5.19295 12.1189C5.24845 11.9898 5.33001 11.8736 5.43251 11.7776C5.65968 11.5842 5.9521 11.485 6.25001 11.5001C6.49898 11.4953 6.74129 11.5806 6.93251 11.7401C7.14183 11.9359 7.30347 12.177 7.40501 12.4451C7.53513 12.7583 7.70125 13.0553 7.90001 13.3301C8.09811 13.5838 8.35572 13.7847 8.65001 13.9151C9.04975 14.0866 9.48293 14.166 9.91751 14.1476C10.5365 14.1775 11.1496 14.0151 11.6725 13.6826C11.8732 13.565 12.0401 13.3976 12.1571 13.1965C12.274 12.9955 12.337 12.7676 12.34 12.5351C12.3465 12.3722 12.3184 12.2098 12.2577 12.0586C12.1969 11.9073 12.1049 11.7707 11.9875 11.6576C11.7205 11.4115 11.3993 11.2317 11.05 11.1326C10.66 11.0051 10.1425 10.8776 9.49001 10.7351C8.74063 10.5606 8.00977 10.3145 7.30751 10.0001C6.75493 9.77358 6.26768 9.41265 5.89001 8.95005C5.53181 8.47323 5.34665 7.88865 5.36501 7.29255C5.35895 6.68656 5.55415 6.09568 5.92001 5.61255C6.3379 5.09336 6.89442 4.70328 7.52501 4.48755C8.32237 4.22272 9.16025 4.10084 10 4.12755C10.6571 4.11593 11.3121 4.20445 11.9425 4.39005C12.4373 4.53696 12.902 4.77059 13.315 5.08005C13.64 5.32418 13.9108 5.63322 14.11 5.98755C14.2721 6.27378 14.3598 6.59613 14.365 6.92505C14.3641 7.06527 14.335 7.20387 14.2796 7.33268C14.2242 7.46149 14.1436 7.57791 14.0425 7.67505C13.9404 7.78564 13.8162 7.87352 13.678 7.93296C13.5397 7.99239 13.3905 8.02207 13.24 8.02005C12.9987 8.03883 12.7596 7.96358 12.5725 7.81005C12.3757 7.62043 12.2111 7.40005 12.085 7.15755C11.8993 6.7753 11.6302 6.43956 11.2975 6.17505C10.861 5.90292 10.3471 5.78171 9.83501 5.83005C9.30932 5.80789 8.78843 5.93812 8.33501 6.20505C8.17031 6.293 8.03122 6.42214 7.93132 6.57988C7.83142 6.73762 7.77412 6.91856 7.76501 7.10505C7.75908 7.30882 7.8255 7.5081 7.95251 7.66755C8.10209 7.84087 8.28596 7.98132 8.49251 8.08005C8.71248 8.19384 8.94374 8.28433 9.18251 8.35005C9.42251 8.41755 9.81251 8.51505 10.36 8.64255C11.05 8.79255 11.665 8.95755 12.2275 9.13755C12.7307 9.29084 13.2102 9.51294 13.6525 9.79755C14.0383 10.0416 14.3558 10.3796 14.575 10.7801C14.7979 11.2367 14.9011 11.7426 14.875 12.2501C14.8818 12.9152 14.6798 13.5657 14.2975 14.1101Z" fill="white"/>
+          </svg>
+          </a>
+         <a href="#"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.94 13.705C7.20685 13.713 8.46268 13.4693 9.63465 12.9882C10.8066 12.507 11.8714 11.798 12.7672 10.9022C13.663 10.0064 14.3721 8.9416 14.8532 7.76964C15.3343 6.59767 15.578 5.34184 15.57 4.07499C15.57 3.92499 15.57 3.78249 15.57 3.63249C16.2267 3.15136 16.7951 2.56012 17.25 1.88499C16.6316 2.15544 15.9773 2.3348 15.3075 2.41749C16.0177 1.99432 16.5506 1.32824 16.8075 0.542488C16.1456 0.939569 15.4199 1.21871 14.6625 1.36749C14.1524 0.824013 13.4775 0.46378 12.7421 0.342528C12.0067 0.221275 11.2518 0.345763 10.5943 0.696729C9.93678 1.04769 9.41324 1.60557 9.1047 2.28405C8.79617 2.96252 8.71983 3.72376 8.8875 4.44999C7.54202 4.38395 6.22553 4.03525 5.02377 3.42662C3.822 2.81798 2.7619 1.96305 1.9125 0.917488C1.48419 1.66087 1.35437 2.53923 1.54932 3.37473C1.74427 4.21023 2.24942 4.94043 2.9625 5.41749C2.43646 5.3972 1.92259 5.25332 1.4625 4.99749V5.03499C1.45783 5.81186 1.71954 6.56688 2.20403 7.17419C2.68851 7.78151 3.3665 8.20443 4.125 8.37249C3.63573 8.50408 3.12322 8.52458 2.625 8.43249C2.84459 9.09503 3.26376 9.67342 3.82503 10.0883C4.38631 10.5032 5.06219 10.7344 5.76 10.75C4.56691 11.7104 3.08407 12.239 1.5525 12.25C1.28396 12.2422 1.01606 12.2197 0.75 12.1825C2.30022 13.1702 4.1019 13.6909 5.94 13.6825" fill="white"/>
+          </svg></a>
+         <a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 0.5C8.56567 0.516578 6.21276 1.37849 4.34375 2.93828C2.47473 4.49807 1.20577 6.65882 0.753937 9.05089C0.302102 11.443 0.695471 13.9177 1.86675 16.0518C3.03803 18.1858 4.91444 19.8466 7.17498 20.75C7.02306 19.7558 7.02306 18.7442 7.17498 17.75L8.41249 12.5C8.21664 12.0245 8.11967 11.5142 8.12749 11C8.12749 9.545 8.97499 8.45 10.025 8.45C10.2152 8.44714 10.4038 8.48543 10.5778 8.56224C10.7519 8.63906 10.9072 8.75258 11.0333 8.89504C11.1594 9.0375 11.2532 9.20553 11.3083 9.38761C11.3634 9.5697 11.3784 9.76154 11.3525 9.95C11.3525 10.85 10.7825 12.2 10.4825 13.445C10.4179 13.6772 10.4102 13.9215 10.4601 14.1573C10.51 14.3931 10.6159 14.6133 10.769 14.7995C10.922 14.9857 11.1176 15.1322 11.3393 15.2267C11.561 15.3212 11.8022 15.361 12.0425 15.3425C13.9025 15.3425 15.3425 13.37 15.3425 10.535C15.3612 9.95891 15.2596 9.38525 15.0442 8.85061C14.8288 8.31598 14.5044 7.8321 14.0916 7.42986C13.6787 7.02762 13.1866 6.71584 12.6465 6.51442C12.1065 6.31299 11.5304 6.22634 10.955 6.26C10.3407 6.23361 9.72736 6.33216 9.15223 6.54966C8.57709 6.76717 8.05206 7.09912 7.60894 7.52542C7.16581 7.95172 6.81379 8.46351 6.57419 9.0298C6.33459 9.59609 6.21239 10.2051 6.21498 10.82C6.20665 11.6766 6.46914 12.5139 6.96498 13.2125C7.00104 13.2526 7.02673 13.3009 7.0398 13.3532C7.05287 13.4055 7.05294 13.4602 7.03999 13.5125C6.95749 13.8425 6.77749 14.5625 6.74749 14.705C6.71748 14.8475 6.58998 14.9375 6.39498 14.8475C5.08248 14.2325 4.26498 12.32 4.26498 10.775C4.26498 7.4675 6.67249 4.4225 11.2025 4.4225C14.84 4.4225 17.675 7.0175 17.675 10.49C17.675 14.105 15.425 17.015 12.2225 17.015C11.753 17.0313 11.2869 16.9301 10.8664 16.7206C10.446 16.511 10.0846 16.1997 9.81499 15.815L9.16249 18.3125C8.8497 19.2831 8.41095 20.2085 7.85749 21.065C8.87732 21.3664 9.93662 21.513 11 21.5C13.7848 21.5 16.4555 20.3938 18.4246 18.4246C20.3937 16.4555 21.5 13.7848 21.5 11C21.5 8.21523 20.3937 5.54451 18.4246 3.57538C16.4555 1.60625 13.7848 0.5 11 0.5Z" fill="white"/>
+          </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
